@@ -1,0 +1,1 @@
+export { SensorDetails } from './SensorDetails';

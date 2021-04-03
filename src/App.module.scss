@@ -1,0 +1,41 @@
+$white: #fff;
+
+.breadcrumbs {
+  margin-bottom: 16px;
+}
+
+.content {
+  background-color: $white;
+  flex: 1 0 auto;
+  padding: 12px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 24px;
+}
+
+.header {
+  background-color: $white;
+}
+
+.innerLayout {
+  flex: 1 0 auto;
+}
+
+.logo {
+  align-items: center;
+  background-color: rgba($white, 0.2);
+  color: $white;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  height: 32px;
+  margin: 16px;
+}
+
+.outerLayout {
+  min-height: 100vh;
+}
