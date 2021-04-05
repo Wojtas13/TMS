@@ -43,7 +43,7 @@ const Dashboard = () => {
     return data;
   };
 
-  // const data = listData();
+  const data = listData();
 
   const link = (
     <Link to='/sensorDetails'>
@@ -53,7 +53,7 @@ const Dashboard = () => {
 
   const returnList = (
     <>
-      {/* <Card title={data.sensorName} extra={link} style={{ width: 400 }}>
+      <Card title={data.sensorName} extra={link} style={{ width: 400 }}>
         <ul>
           <li>Średnia temperatura: {data.AvgTemp}°</li>
           <li>Średnia wilgotność: {data.AvgHumidity}°</li>
@@ -65,20 +65,6 @@ const Dashboard = () => {
           <li>Średnia temperatura: {data.AvgTemp}°</li>
           <li>Średnia wilgotność: {data.AvgHumidity}°</li>
           <li>Czas odczytu: {data.ReadTime}</li>
-        </ul>
-      </Card> */}
-      <Card title='Indoor Kraków' extra={link} style={{ width: 400 }}>
-        <ul>
-          <li>Średnia temperatura: 22°</li>
-          <li>Średnia wilgotność: 85%</li>
-          <li>Czas odczytu: 21.03.21 21:14</li>
-        </ul>
-      </Card>
-      <Card title='Outdoor Kraków' extra={link} style={{ width: 400 }}>
-        <ul>
-          <li>Średnia temperatura: 0°</li>
-          <li>Średnia wilgotność: 89%</li>
-          <li>Czas odczytu: 21.03.21 21:14</li>
         </ul>
       </Card>
     </>

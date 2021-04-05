@@ -96,27 +96,11 @@ const TemperatureChart = () => {
       }
     });
   };
-  // initChartData();
-  // console.log(temperatures);
+  initChartData();
 
   const chartData = {
-    labels: ['12:00', '13:00', '14:00', '15:00', '16:00'],
-    datasets: [
-      {
-        label: 'Indoor Kraków',
-        data: [21, 20.5, 22, 21, 23],
-        fill: false,
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgba(0, 255, 128, 0.5)',
-      },
-      {
-        label: 'Outdoor Kraków',
-        data: [-2, 3, -1, 3, 0],
-        fill: false,
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgba(0, 128, 255, 0.5)',
-      },
-    ],
+    labels: labels,
+    datasets: data,
   };
   const { RangePicker } = DatePicker;
   const returnChart = (

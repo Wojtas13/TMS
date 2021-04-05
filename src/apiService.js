@@ -7,6 +7,8 @@ import { API_URL } from './constants';
 let apiKey = cookies.get('apiKey');
 let sessionId = cookies.get('sessionId');
 let username = cookies.get('username');
+let startDate = cookies.get('startDate');
+let endDate = cookies.get('endDate');
 
 const apiClient = axios.create({
   baseURL: `${API_URL}`,
@@ -74,7 +76,7 @@ export const apiService = {
   sensorResults: {
     async getAllTemp() {
       return await apiClient.get(
-        `?action=showAveragedData&StartDate=2021-03-14 00:00:00&EndDate=2021-03-15 23:59:59&UserName=${username}&ApiKey=${apiKey}`
+        `?action=showAveragedData&StartDate=${startDate}&EndDate=${endDate}&UserName=${username}&ApiKey=${apiKey}`
       );
     },
   },

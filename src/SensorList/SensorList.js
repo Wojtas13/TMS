@@ -59,18 +59,6 @@ const SensorList = () => {
   };
   const data = sensorList();
 
-  // const data = [
-  //   {
-  //     key: '1',
-  //     sensorName: 'Indoor Kraków',
-  //     sensorId: '29',
-  //   },
-  //   {
-  //     key: '2',
-  //     sensorName: 'Outdoor Kraków',
-  //     sensorId: '20',
-  //   },
-  // ];
   const returnTable = (
     <Table key={data.key} columns={columns} dataSource={data} />
   );
